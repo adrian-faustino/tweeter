@@ -1,0 +1,24 @@
+header {
+  height: 400px;
+  width: 100%;
+  background: whitesmoke;
+}
+
+.avatar-container {
+  position: absolute;
+  top: 125px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(#4056A1, salmon);
+  box-shadow: 0 0 5px black;
+}
+
+.avatar-img {
+  padding-top: 25px;
+}
+
+.avatar-username {
+  text-align: center;
+  color: white;
+  line-height: 0;
+}
