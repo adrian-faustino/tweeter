@@ -15,6 +15,7 @@ header {
 
 .avatar-img {
   padding-top: 25px;
+  opacity: 0.8;
 }
 
 .avatar-username {
