@@ -24,3 +24,8 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ .wrapper {
+   width: 80%;
+   margin: 0 auto;
+ }
