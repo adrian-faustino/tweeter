@@ -16,6 +16,8 @@
 
     <link rel="stylesheet" href="/styles/header.css" type="text/css">
 
+    <link rel="stylesheet" href="/styles/new-tweet.css">
+
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -40,30 +42,32 @@
       </div>
     </nav>
 
-    <header>
-      <div class="avatar-container">
-        <div>
-            <img class="avatar-img" src="/images/profile-hex.png"> 
-        </div>
-        <div class="avatar-username">
-            <h2>Adrian Faustino</h2>
-        </div>
-    </div>
-  </header>
+
 
     <!-- Page-specific (main) content here -->
     <main class="wrapper">
+      <header>
+        <div class="avatar-container">
+          <div>
+              <img class="avatar-img" src="/images/profile-hex.png"> 
+          </div>
+          <div class="avatar-username">
+              <h2>Adrian Faustino</h2>
+          </div>
+        </div>
+      </header>
+
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
+        <h2 class="compose-header">Compose Tweet</h2>
         <form action="/tweets" method="POST">
-          <label for="tweet-text">What are you humming about?</label>
+          <label class="form-label" for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
-          <button type="submit">Tweet</button>
+          <button class="submit-button" type="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </form>
       </section>
 
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptas soluta quaerat architecto incidunt accusamus voluptatibus ullam quos maiores quae quod. Deleniti dolores repellendus eum, eius voluptatem officia mollitia vitae velit dicta magni illo consequuntur minus sunt excepturi! Doloremque quis temporibus magnam debitis, fugiat eos explicabo. Quod corrupti obcaecati eum?
+      <div class="post-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore adipisci blanditiis culpa iure in. Doloremque ut totam labore excepturi quam reprehenderit nostrum? Vitae exercitationem voluptatum necessitatibus numquam deserunt! Quae, similique sit. Quos exercitationem praesentium deserunt asperiores error recusandae ut maxime natus, omnis et id eligendi, nobis at, voluptatum itaque incidunt cum doloremque atque sed a quaerat nam? Blanditiis, voluptates voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut id iure, cumque voluptate maxime molestiae illum aliquam quaerat eum quisquam eligendi eos delectus adipisci est, quod assumenda accusamus! Distinctio commodi placeat atque laboriosam ipsum quas quo repellendus. Eligendi mollitia laboriosam, dignissimos optio sit enim. Dolore, deleniti voluptatibus explicabo atque optio molestias quidem nam obcaecati, qui nisi placeat illum, architecto labore assumenda! Quam voluptate quae iure explicabo tenetur incidunt sed excepturi dolorem in ab eveniet eligendi fuga repellat omnis eius, beatae rerum nemo, nam esse! Quia voluptate provident minima obcaecati autem impedit vero accusamus, sit repellat exercitationem nulla fugit tenetur in, distinctio maxime. Autem ut, perferendis iusto consequuntur consequatur fuga molestias et consectetur mollitia rerum nisi suscipit aliquid sunt laborum porro dolor, expedita quos eaque eveniet optio. Ipsum consequuntur asperiores atque distinctio possimus. Molestias mollitia exercitationem eligendi voluptatem porro praesentium, placeat vero totam architecto cum, aliquid unde, delectus molestiae illum cupiditate? Dolore vel nihil adipisci sed culpa, quibusdam ea nam repellat ducimus dolorum! Provident velit laudantium architecto quod qui! Error corporis commodi quia maxime, laboriosam accusantium, unde eveniet exercitationem obcaecati, aliquam facere porro? Pariatur, reiciendis est quod, dignissimos eveniet, iste aliquid optio exercitationem maiores eum iusto nisi a labore voluptas voluptates iure expedita eos rem esse? Tempora repellat suscipit vitae voluptas? Deleniti quos corrupti fugit enim iure facere tempore praesentium, ad, qui cum saepe soluta, reprehenderit autem! Quisquam, eligendi quibusdam voluptas repellat dolorum placeat, reprehenderit nam minima minus, repellendus dignissimos laboriosam eos corporis temporibus animi officia obcaecati ducimus pariatur incidunt architecto illo officiis in facere. Placeat eos voluptatum voluptatem fuga provident alias porro dolorum ut perspiciatis vitae cupiditate omnis beatae dolor voluptas, animi, nobis quos optio, a blanditiis minus! Veniam fugit maxime illo, placeat non ipsum praesentium sapiente voluptatibus laudantium, enim accusamus porro dolorum tenetur, neque animi at saepe ratione voluptatem!</div>
     </main>
   </body>
 </html>

@@ -1,4 +1,70 @@
 .new-tweet {
+  position: relative;
+  top: 120px;
   padding: 10px;
-  background: red;
+  background-color: #4056A1;
+  color: whitesmoke;
+}
+
+.new-tweet > h2 {
+  display: inline;
+}
+
+.form-label {
+  position: relative;
+  left: 20px;
+  color: rgba(214, 207, 207, 0.87);
+  display: block;
+  font-style: italic;
+}
+
+.counter {
+  font-weight: bold;
+  color: rgba(214, 207, 207, 0.87);
+}
+
+.compose-header {
+  color: yellow;
+  font-family: 'Bungee', sans-serif;
+}
+
+#tweet-text {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  margin: 6px 0 9px 0;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 3px black;
+}
+
+.submit-button {
+  border: none;
+  color: rgba(0, 0, 0, 0.85);
+  font-family: 'Bungee', sans-serif;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.5s ease-out;
+  margin-right: 5px;
+
+  animation: glow 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.submit-button:hover {
+  background-color: lightskyblue;
+  color: yellow;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px yellow;
+  }
+  100% {
+    box-shadow: 0 0 10px yellow;
+  }
 }

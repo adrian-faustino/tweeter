@@ -1,4 +1,6 @@
 header {
+  position: relative;
+  top: 120px;
   height: 400px;
   width: 100%;
   background: whitesmoke;
@@ -6,9 +8,9 @@ header {
 
 .avatar-container {
   position: absolute;
-  top: 125px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%) translateY(-50%);
   background: linear-gradient(#4056A1, salmon);
   box-shadow: 0 0 5px black;
 }

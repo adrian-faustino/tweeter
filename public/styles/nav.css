@@ -1,5 +1,5 @@
 .nav-container {
-  position: sticky;
+  position: fixed;
   height: 120px;
   width: 100vw;
   z-index: 1;
