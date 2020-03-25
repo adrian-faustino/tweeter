@@ -65,4 +65,6 @@ const createTweetElement = function(obj) {
 // ==> After document loads
 $(document).ready(() => {
   renderTweets(data);
+
+  const tweet_button = $();
 });

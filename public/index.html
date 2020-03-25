@@ -28,9 +28,6 @@
 
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
-    <script type="text/javascript" src="/scripts/tweet-on-highlight.js"></script>
-  </head>
-
   <body>
     <!-- Top nav bar (fixed) -->
     <nav class="nav-container">
@@ -63,6 +60,7 @@
         </div>
       </header>
 
+      <!-- submission form -->
       <section class="new-tweet">
         <h2 class="compose-header">Compose Tweet</h2>
         <form action="/tweets" method="POST">
@@ -75,7 +73,8 @@
         </form>
       </section>
 
-      <div class="tweets-container">
+      <!-- tweet cotainer -->
+      <section class="tweets-container">
         <article class="post-container">
           <header class='post'>
             <div class="avatar-container">
@@ -95,7 +94,7 @@
             10 days ago
           </footer>
         </article>
-      </div>
+      </section>
     </main>
   </body>
 </html>
