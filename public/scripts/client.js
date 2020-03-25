@@ -60,6 +60,16 @@ const overCharCount = function(num, str) {
   return false;
 };
 
+const errorAnimation = function(str) {
+  $('.error-msg')
+    .removeClass('reveal');
+  setTimeout(() => {
+    $('.error-msg')
+    .html(str)
+    .addClass('reveal');
+  }, 300);
+};
+
 // ==> After document loads
 $(document).ready(() => {
   loadTweets('/tweets');
@@ -72,9 +82,9 @@ $(document).ready(() => {
       .val();
 
     if (overCharCount(140, userInput)) {
-      alert('Over character limit!');
+      errorAnimation('Exceeding 140 character limit!');
     } else if (userInput === '') {
-      alert(`Don't be shy. Enter a message!`);
+      errorAnimation(`Don't be shy. Enter a message!`);
     } else {
       const tweetContent = $('#submission-form').serialize();
 
@@ -83,6 +93,7 @@ $(document).ready(() => {
         loadTweets('/tweets');
       });
 
+      $('.error-msg').removeClass('reveal');
       $('#tweet-text').val('');
     }
   });
