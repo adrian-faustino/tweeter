@@ -16,7 +16,7 @@ html {
 
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: whitesmoke;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -26,9 +26,21 @@ body {
  */
 
  .wrapper {
+   padding: 0 15px;
    width: 90%;
    min-height: 100vh;
    margin: 0 auto;
    border-top: none;
    box-shadow: 0 0 2px black;
+   background-color: #f4f1ec;
+ }
+
+ .tweets-container {
+   position: relative;
+   top: 120px;
+   display: grid;
+   width: 100%;
+   background-color: #f4f1ec;
+   height: 100vh;
+   padding: 15px 10px;
  }

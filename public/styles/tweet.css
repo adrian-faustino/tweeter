@@ -1,0 +1,13 @@
+header.post {
+  display: inline-block;
+  background: red;
+  height: min-content;
+}
+
+div.post-content {
+  background: yellow;
+}
+
+footer {
+  background: purple;
+}

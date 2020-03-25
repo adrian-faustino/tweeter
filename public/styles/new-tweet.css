@@ -1,5 +1,7 @@
 .new-tweet {
   position: relative;
+  border-radius: 8px;
+  box-shadow: 0 0 3px black;
   top: 120px;
   padding: 10px;
   background-color: #4056A1;
