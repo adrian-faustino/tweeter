@@ -61,19 +61,22 @@ $(document).ready(() => {
   $('#submission-form').on('submit', (e) => {
     e.preventDefault();
     
-    const userInput = $('#submission-form').val();
+    let userInput = $('#submission-form')
+      .find('#tweet-text')
+      .val();
+
     if (overCharCount(140, userInput)) {
-      return alert('Over character limit!');
+      alert('Over character limit!');
     } else if (userInput === '') {
-      return alert(`Don't be shy. Enter a message!`);
-    }
+      alert(`Don't be shy. Enter a message!`);
+    } else {
+      const tweetContent = $('#submission-form').serialize();
 
-    const tweetContent = $('#submission-form').serialize();
-
-    $.post('/tweets', tweetContent)
+      $.post('/tweets', tweetContent)
       .then(() => {
         loadTweets('/tweets');
       });
+    }
   });
 });
 
