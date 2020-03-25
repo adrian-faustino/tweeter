@@ -80,9 +80,9 @@ $(document).ready(() => {
       .val();
 
     if (overCharCount(140, userInput)) {
-      errorAnimation('Exceeding 140 character limit!');
+      errorAnimation('⛔️Exceeding 140 character limit!');
     } else if (userInput === '') {
-      errorAnimation(`Don't be shy. Enter a message!`);
+      errorAnimation(`⛔️Don't be shy. Enter a message!`);
     } else {
       const tweetContent = $('#submission-form').serialize();
 
