@@ -43,7 +43,16 @@ const loadTweets = function(server) {
     .then((data) => {
       renderTweets(data);
     });
-}
+};
+
+const overCharCount = function(num, str) {
+  const maxChar = num;
+
+  if (str.length > maxChar) {
+    return true;
+  }
+  return false;
+};
 
 // ==> After document loads
 $(document).ready(() => {
@@ -52,6 +61,13 @@ $(document).ready(() => {
   $('#submission-form').on('submit', (e) => {
     e.preventDefault();
     
+    const userInput = $('#submission-form').val();
+    if (overCharCount(140, userInput)) {
+      return alert('Over character limit!');
+    } else if (userInput === '') {
+      return alert(`Don't be shy. Enter a message!`);
+    }
+
     const tweetContent = $('#submission-form').serialize();
 
     $.post('/tweets', tweetContent)
