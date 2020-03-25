@@ -76,7 +76,8 @@ $(document).ready(() => {
       .then(() => {
         loadTweets('/tweets');
       });
+
+      $('#tweet-text').val('');
     }
   });
 });
-
