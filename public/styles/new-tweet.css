@@ -42,6 +42,11 @@
   box-shadow: inset 0 0 3px black;
 }
 
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .submit-button {
   border: none;
   color: rgba(0, 0, 0, 0.85);
