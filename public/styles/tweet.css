@@ -19,6 +19,9 @@ header.post {
   height: min-content;
   font-weight: bold;
   color: black;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .post-content {
@@ -43,4 +46,23 @@ footer:before {
   background-color: grey;
   border-radius: 1px;
   transform: translateX(-50%);
+}
+
+/* on-hover */
+.post-container:hover {
+  background-color: rgba(255, 255, 0, 0.7);
+}
+
+.userID {
+  transition: all 0.3s;
+  position: relative;
+  right: -200px;
+  opacity: 0;
+}
+
+.userID.reveal {
+  color: rgba(204, 204, 204, 0.877);
+  position: relative;
+  right: 0;
+  opacity: 1;
 }

@@ -1,5 +1,4 @@
 $(document).ready(() => {
-  console.log('TEST');
   $('#tweet-text').on('keyup', (e) => {
     let charCount = 140;
     let currentInputCount = $('#tweet-text').val().length;
