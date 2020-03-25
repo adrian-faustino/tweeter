@@ -42,9 +42,14 @@ $(document).ready(() => {
     const newDiv = $('<div></div>')
       .addClass('post-container');
     
+    const newAvatarContainer = $('<div></div>')
+      .addClass('avatar-container')
+      .append(`<img src="${obj.user.avatars}">`)
+      .append(`<span class="username">${obj.user.name}</span>`);
+    
     const newHeader = $('<header></header>')
       .addClass('post')
-      .append(`<span class="username">${obj.user.name}</span>`)
+      .append(newAvatarContainer)
       .append(`<span class="userID">${obj.user.handle}</span>`);
 
     const newPostContent = $(`<div>${obj.content.text}</div>`)

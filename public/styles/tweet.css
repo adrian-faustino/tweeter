@@ -4,12 +4,14 @@
   box-shadow:
   inset 10px 10px 10px 0 rgba(151, 151, 151, 0.308),
   inset -10px -10px 10px 0 rgba(0, 0, 0, 0.253);
+  margin: 10px 0;
 }
 
 .post-container > * {
   padding: 10px 20px;
 }
 
+/* header */
 header.post {
   background-color: #4056A1;
   border: 1px solid rgba(36, 48, 88, 0.384);
@@ -24,12 +26,39 @@ header.post {
   justify-content: space-between;
 }
 
+header.post .avatar-container {
+  position: relative;
+  left: 0;
+  top: 0;
+  transform: translateX(0%);
+  box-shadow: none;
+  border-radius: 0 0 3px 3px;
+
+  display: flex;
+  align-items: center;
+}
+
+.avatar-container > img {
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0 0 3px black;
+  margin: 5px;
+  background-color: whitesmoke;
+}
+
+.avatar-container > span {
+  display: inline-block;
+  margin: 5px;
+}
+
+/* text content */
 .post-content {
   font-size: 25px;
   color: black;
   letter-spacing: 0.3px;
 }
 
+/* footer */
 footer.tweet {
   position: relative;
   font-weight: bold;

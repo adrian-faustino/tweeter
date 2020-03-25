@@ -1,9 +1,9 @@
 $(document).ready(() => {
-  $('.post-container').on('mouseenter', () => {
-    $('.userID').toggleClass('reveal');
+  $('.post-container').on('mouseenter', (e) => {
+    e.target.$('.userID').toggleClass('reveal');
   });
 
-  $('.post-container').on('mouseleave', () => {
-    $('.userID').toggleClass('reveal');
+  $('.post-container').on('mouseleave', (e) => {
+    e.target.$('.userID').toggleClass('reveal');
   });
 });
