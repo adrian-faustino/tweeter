@@ -1,13 +1,46 @@
-header.post {
-  display: inline-block;
-  background: red;
+.post-container {
+  border-radius: 5px;
   height: min-content;
+  box-shadow:
+  inset 10px 10px 10px 0 rgba(151, 151, 151, 0.308),
+  inset -10px -10px 10px 0 rgba(0, 0, 0, 0.253);
 }
 
-div.post-content {
-  background: yellow;
+.post-container > * {
+  padding: 10px 20px;
+}
+
+header.post {
+  background-color: #4056A1;
+  border: 1px solid rgba(36, 48, 88, 0.384);
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  position: static;
+  height: min-content;
+  font-weight: bold;
+  color: black;
+}
+
+.post-content {
+  font-size: 25px;
+  color: black;
+  letter-spacing: 0.3px;
 }
 
 footer {
-  background: purple;
+  position: relative;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 5px;
+  width: 96%;
+  background-color: grey;
+  border-radius: 1px;
+  transform: translateX(-50%);
 }
