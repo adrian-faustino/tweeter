@@ -32,7 +32,6 @@ $(document).ready(() => {
 
   const renderTweets = function(tweets) {
     for (let tweet of tweets) {
-      console.log('hi');
       $('.tweets-container')
         .append(createTweetElement(tweet));
     }
