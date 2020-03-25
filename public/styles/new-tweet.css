@@ -79,7 +79,7 @@
 }
 
 /* error message */
-.error-msg {
+.error-msg.hidden {
   color: rgba(255, 0, 0, 0.856);
   text-shadow: 0 1px rgb(80, 67, 67);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -88,9 +88,21 @@
   left: 50%;
   bottom: 15px;
   transform: translateX(-50%);
-  /* opacity: 0; */
-  /* z-index: -1; */
   pointer-events: none;
+  opacity: 0;
+}
+
+.error-msg.reveal.shake {
+  color: rgba(255, 0, 0, 0.856);
+  text-shadow: 0 1px rgb(80, 67, 67);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+  animation: shake_ 0.5s;
+  opacity: 1;
 }
 
 .error-msg.reveal {
@@ -98,17 +110,42 @@
   text-shadow: 0 1px rgb(80, 67, 67);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
-  /* opacity: 1; */
-  /* z-index: 1; */
-
   position: absolute;
   left: 50%;
   bottom: 15px;
   transform: translateX(-50%);
   animation: shake 0.5s;
+  opacity: 1;
 }
 
 @keyframes shake {
+  0% {
+    bottom: 15px;
+    color: salmon;
+  }
+  20% {
+    bottom: 26px;
+    color: rgba(255, 0, 0, 0.856);
+  }
+  40% {
+    bottom: 5px;
+    color: pink;
+  }
+  65% {
+    bottom: 24px;
+    color: rgba(255, 0, 0, 0.856);
+  }
+  90% {
+    bottom: 10px;
+    color: salmon;
+  }
+  100% {
+    bottom: 15px;
+    color: rgba(255, 0, 0, 0.856);;
+  }
+}
+
+@keyframes shake_ {
   0% {
     bottom: 15px;
     color: salmon;

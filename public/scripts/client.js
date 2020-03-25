@@ -62,12 +62,10 @@ const overCharCount = function(num, str) {
 
 const errorAnimation = function(str) {
   $('.error-msg')
-    .removeClass('reveal');
-  setTimeout(() => {
-    $('.error-msg')
     .html(str)
+    .removeClass('hidden')
+    .toggleClass('shake')
     .addClass('reveal');
-  }, 300);
 };
 
 // ==> After document loads
@@ -93,7 +91,10 @@ $(document).ready(() => {
         loadTweets('/tweets');
       });
 
-      $('.error-msg').removeClass('reveal');
+      $('.error-msg')
+        .removeClass('reveal')
+        .removeClass('shake')
+        .addClass('hidden');
       $('#tweet-text').val('');
     }
   });
