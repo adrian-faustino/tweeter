@@ -4,6 +4,12 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+const escape =  function(str) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
+
 // tweets parameter should be an array
 const renderTweets = function(tweets) {
   for (let tweet of tweets) {
@@ -26,7 +32,7 @@ const createTweetElement = function(obj) {
     .append(newAvatarContainer)
     .append(`<span class="userID">${obj.user.handle}</span>`);
 
-  const newPostContent = $(`<div>${obj.content.text}</div>`)
+  const newPostContent = $(`<div>${escape(obj.content.text)}</div>`)
     .addClass('post-content');
 
   const newFooter = $(`<footer>${obj.created_at}</footer>`)
