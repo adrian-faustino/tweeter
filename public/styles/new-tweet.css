@@ -54,6 +54,7 @@
   border: 1px outset black;
   border-radius: 3px;
   cursor: pointer;
+  outline: none;
   background-color: white;
   transition: all 0.2s ease-out;
   margin-right: 5px;
