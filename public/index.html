@@ -43,10 +43,10 @@
         </span>
 
         <!-- burger -->
-        <div class="v-container">
+        <a href="#tweet-form" class="v-container">
           <div class="v v1"></div>
           <div class="v v2"></div>
-        </div>
+        </a>
       </div>
     </nav>
 
@@ -65,12 +65,16 @@
         </div>
       </header>
 
+      <!-- dummy target for burger href -->
+      <div id="tweet-form"></div>
+      <br>
+
       <!-- submission form -->
       <section class="new-tweet">
         <h2 class="compose-header">Compose Tweet</h2>
         <form id ="submission-form" action="/tweets" method="POST">
           <label class="form-label" for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text"></textarea>
+          <textarea name="text" id="tweet-text" autofocus></textarea>
           <footer class="form-footer">
             <button class="submit-button" type="submit">Tweet</button>
 

@@ -13,6 +13,10 @@ html {
 /*
  * Global layout stuff
  */
+ 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   color: #545149;

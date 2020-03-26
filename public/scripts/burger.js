@@ -10,4 +10,11 @@ $(document).ready(() => {
     $('.v.v2')
       .removeClass('open');
   });
+
+  // focus the text field after jump
+  $('.v-container').on('click', () => {
+    setTimeout(() => {
+      $('#tweet-text').focus();
+    },0);
+  });
 });
