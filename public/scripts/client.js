@@ -85,10 +85,14 @@ $(document).ready(() => {
       errorAnimation(`⛔️Don't be shy. Enter a message!`);
     } else {
       const tweetContent = $('#submission-form').serialize();
+      console.log('Tweet Content: ', tweetContent)
 
       $.post('/tweets', tweetContent)
       .then(() => {
-        loadTweets('/tweets');
+        $.get('/tweets', (dataArr) => {
+          renderTweets(dataArr.splice(dataArr.length - 1));
+        });
+        // loadTweets('/tweets');
       });
 
       $('.error-msg')
