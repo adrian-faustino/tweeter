@@ -18,16 +18,3 @@
   font-family: 'Bungee', sans-serif;
   align-self: center;
 }
-
-/* v dropdown style and animation */
-.v-container {
-  display: grid;
-  justify-content: center;
-}
-
-.v {
-  width: 20px;
-  height: 2px;
-  border: 2px solid orangered;
-  margin: 1px;
-}
