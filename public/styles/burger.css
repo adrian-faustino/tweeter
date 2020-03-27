@@ -46,7 +46,7 @@
   transform: rotate(-45deg);
 }
 
-/* v2 */
+/* Second V bar */
 .v.v2::before,
 .v.v2::after {
   content: '';

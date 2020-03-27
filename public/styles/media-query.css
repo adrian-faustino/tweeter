@@ -26,7 +26,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-  /* error */
+  /* Make error message appear at the top of screen once view width becomes too small */
   .error-msg.reveal,
   .error-msg.reveal.shake {
     background-color: rgba(30, 63, 207, 0.867);
@@ -55,9 +55,9 @@
  }
 }
 
-/* iPhone 5s */
+/* To accomodate for iPhone 5s screen size */
 @media only screen and (max-width: 360px) {
-  /* nav */
+  /* nav section */
   .nav-logo {
     position: absolute;
     left: 15px;
@@ -69,7 +69,7 @@
     align-items: center;
   }
 
-  /* tweet */
+  /* tweet section */
   .tweets-container {
     padding: 0;
   }
@@ -87,7 +87,7 @@
     background: none;
   }
 
-  /* submission form */
+  /* submission form section */
   label.form-label {
     left: 0;
   }

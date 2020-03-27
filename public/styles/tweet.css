@@ -11,7 +11,7 @@
   padding: 10px 20px;
 }
 
-/* header */
+/* header section */
 header.post {
   background-color: #4056A1;
   border: 1px solid rgba(36, 48, 88, 0.384);
@@ -51,7 +51,7 @@ header.post .avatar-container {
   margin: 5px;
 }
 
-/* text content */
+/* text content section */
 .post-content {
   font-size: 25px;
   color: black;
@@ -59,7 +59,7 @@ header.post .avatar-container {
   word-wrap: normal;
 }
 
-/* footer */
+/* footer section */
 footer.tweet {
   position: relative;
   font-weight: bold;
@@ -78,7 +78,7 @@ footer.tweet:before {
   transform: translateX(-50%);
 }
 
-/* on-hover */
+/* on-hover events */
 .post-container:hover {
   background-color: rgba(255, 255, 0, 0.7);
 }

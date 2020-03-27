@@ -1,12 +1,13 @@
 $(document).ready(() => {
+  // clear error message upon key entry
   $('#tweet-text').on('keydown', (e) => {
-    // clear error message
     $('.error-msg')
       .removeClass('reveal')
       .removeClass('shake')
       .addClass('hidden');
   });
 
+  // update 140 character count
   $('#tweet-text').on('keyup', (e) => {
     let charCount = 140;
     let currentInputCount = $('#tweet-text').val().length;
