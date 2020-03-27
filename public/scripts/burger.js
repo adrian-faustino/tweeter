@@ -13,6 +13,11 @@ $(document).ready(() => {
 
   // focus the text field after jump
   $('.v-container').on('click', () => {
+    window.scroll({
+      top: 0,
+      left: 0,
+    });
+    
     setTimeout(() => {
       $('#tweet-text').focus();
     },0);
