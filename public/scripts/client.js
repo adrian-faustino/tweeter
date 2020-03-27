@@ -8,7 +8,7 @@ const escape =  function(str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
-}
+};
 
 // tweets parameter should be an array
 const renderTweets = function(tweets) {
@@ -36,7 +36,7 @@ const createTweetElement = function(obj) {
     .addClass('post-content');
 
   const newFooter = $(`<footer>${obj.created_at}</footer>`)
-    .addClass('tweet')
+    .addClass('tweet');
 
   return newDiv
     .append(newHeader)
@@ -85,15 +85,15 @@ $(document).ready(() => {
       errorAnimation(`⛔️Enter a message!`);
     } else {
       const tweetContent = $('#submission-form').serialize();
-      console.log('Tweet Content: ', tweetContent)
+      console.log('Tweet Content: ', tweetContent);
 
       $.post('/tweets', tweetContent)
-      .then(() => {
-        $.get('/tweets', (dataArr) => {
-          renderTweets(dataArr.splice(dataArr.length - 1));
-        });
+        .then(() => {
+          $.get('/tweets', (dataArr) => {
+            renderTweets(dataArr.splice(dataArr.length - 1));
+          });
         // loadTweets('/tweets');
-      });
+        });
 
       $('.error-msg')
         .removeClass('reveal')

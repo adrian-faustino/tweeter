@@ -3,7 +3,7 @@ $(document).ready(() => {
     $('.v.v1')
       .addClass('open');
     $('.v.v2')
-      .addClass('open');    
+      .addClass('open');
   }, () => {
     $('.v.v1')
       .removeClass('open');
