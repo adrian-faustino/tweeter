@@ -18,11 +18,40 @@ const renderTweets = function(tweets) {
   }
 };
 
-const daysPassed = function(date) {
-  const currentDate = new Date();
-  const days = currentDate - date;
-  console.log('Days passed: ', Date(date));
-  return Date(date);
+const timePassed = function(date) {
+  const start = new Date(date).getTime();
+  const end = new Date().getTime();
+  const DELAY = 174; // 174 from simulated delay?...
+  const elapsedSeconds = Math.floor(((end - start) / 1000) - DELAY);
+
+  const SECONDS = 60;
+  const MINUTES = 60;
+  const HOURS = 24;
+
+  // format to seconds ago, minutes ago, hours ago, or days ago
+  if (elapsedSeconds <= 1) {
+    return 'A few seconds ago';
+  } else if (elapsedSeconds < SECONDS) {
+    return `${elapsedSeconds} seconds ago`;
+  } else if (elapsedSeconds / 60 < MINUTES) {
+    const currentMinute = Math.floor(elapsedSeconds / 60);
+    if (currentMinute === 1) {
+      return `${currentMinute} minute ago`;
+    } else {
+      return `${currentMinute} minutes ago`;
+    }
+  } else if (elapsedSeconds / 60 / 60 < HOURS) {
+    const currentHour = Math.floor(elapsedSeconds / 60 / 60);
+    if (currentHour === 1) {
+      return `${currentHour} hour ago`;
+    } else {
+      return `${currentHour} hours ago`;
+    }
+  } else if (Math.floor(elapsedSeconds / 60 / 60 / 24) === 1) {
+    return '1 day ago';
+  } else {
+    return Math.floor(elapsedSeconds / 60 / 60 / 24) + ' days ago';
+  }
 };
 
 const createTweetElement = function(obj) {
@@ -42,7 +71,7 @@ const createTweetElement = function(obj) {
   const newPostContent = $(`<div>${escape(obj.content.text)}</div>`)
     .addClass('post-content');
 
-  const newFooter = $(`<footer>${daysPassed(obj.created_at)}</footer>`)
+  const newFooter = $(`<footer>${timePassed(obj.created_at)}</footer>`)
     .addClass('tweet');
 
   return newDiv
@@ -92,7 +121,6 @@ $(document).ready(() => {
       errorAnimation(`⛔️Enter a message!`);
     } else {
       const tweetContent = $('#submission-form').serialize();
-      console.log('Tweet Content: ', tweetContent);
 
       $.post('/tweets', tweetContent)
         .then(() => {
