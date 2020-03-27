@@ -64,6 +64,7 @@
   }
 
   nav.nav-container {
+    width: 100%;
     height: 30px;
     justify-content: flex-end;
     align-items: center;
@@ -71,16 +72,16 @@
 
   /* tweet section */
   .tweets-container {
+    width: 100%;
     padding: 0;
   }
 
   .post-container > * {
-    width: 280px;
+    width: 100%;
   }
 
   header.post {
     padding: 0;
-    width: 100%;
   }
 
   header.post .avatar-container {
