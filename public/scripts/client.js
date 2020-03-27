@@ -18,6 +18,13 @@ const renderTweets = function(tweets) {
   }
 };
 
+const daysPassed = function(date) {
+  const currentDate = new Date();
+  const days = currentDate - date;
+  console.log('Days passed: ', Date(date));
+  return Date(date);
+};
+
 const createTweetElement = function(obj) {
   const newDiv = $('<article></article>')
     .addClass('post-container');
@@ -35,7 +42,7 @@ const createTweetElement = function(obj) {
   const newPostContent = $(`<div>${escape(obj.content.text)}</div>`)
     .addClass('post-content');
 
-  const newFooter = $(`<footer>${obj.created_at}</footer>`)
+  const newFooter = $(`<footer>${daysPassed(obj.created_at)}</footer>`)
     .addClass('tweet');
 
   return newDiv
@@ -92,7 +99,6 @@ $(document).ready(() => {
           $.get('/tweets', (dataArr) => {
             renderTweets(dataArr.splice(dataArr.length - 1));
           });
-        // loadTweets('/tweets');
         });
 
       $('.error-msg')
