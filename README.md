@@ -18,7 +18,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-!["Demo of dynamic animations and jump to compose section button"]()
-!["Demo of window resizing breakpoints"]()
-!["Demo of character counter and error messages"]()
-!["Demo of tablet feature and error messages"]()
+!["Demo of dynamic animations and jump to compose section button"](https://github.com/adrian-faustino/tweeter/blob/master/docs/dynamic-animation.gif)
+!["Demo of window resizing breakpoints"](https://github.com/adrian-faustino/tweeter/blob/master/docs/desktop-breakpoint.gif)
+!["Demo of character counter and error messages"](https://github.com/adrian-faustino/tweeter/blob/master/docs/desktop-error.gif)
+!["Demo of tablet feature and error messages"](https://github.com/adrian-faustino/tweeter/blob/master/docs/tablet-error.gif)
