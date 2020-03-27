@@ -1,0 +1,71 @@
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  /* error */
+  .error-msg.reveal,
+  .error-msg.reveal.shake {
+    background-color: rgba(30, 63, 207, 0.867);
+    transition: all 1s;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    animation: none !important;
+    position: fixed !important;
+    bottom: 0px;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 530px) {
+ .new-tweet-span {
+   display: none;
+ }
+}
+
+/* iPhone 5s */
+@media (max-width: 360px) {
+  /* nav */
+  .nav-logo {
+    position: absolute;
+    left: 15px;
+  }
+
+  nav.nav-container {
+    height: 30px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  /* tweet */
+  .tweets-container {
+    padding: 0;
+  }
+
+  .post-container > * {
+    width: 280px;
+  }
+
+  header.post {
+    padding: 0;
+    width: 100%;
+  }
+
+  header.post .avatar-container {
+    background: none;
+  }
+
+  /* submission form */
+  label.form-label {
+    left: 0;
+  }
+}
