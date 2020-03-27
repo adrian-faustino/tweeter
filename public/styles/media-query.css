@@ -1,10 +1,10 @@
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .wrapper {
     width: 80%;
   }
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   /* error */
   .error-msg.reveal,
   .error-msg.reveal.shake {
@@ -20,20 +20,20 @@
   }
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .wrapper {
     width: 100%;
   }
 }
 
-@media (max-width: 530px) {
+@media only screen and (max-width: 530px) {
  .new-tweet-span {
    display: none;
  }
 }
 
 /* iPhone 5s */
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   /* nav */
   .nav-logo {
     position: absolute;
