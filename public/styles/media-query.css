@@ -30,7 +30,7 @@
   .error-msg.reveal,
   .error-msg.reveal.shake {
     background-color: rgba(30, 63, 207, 0.867);
-    transition: all 1s;
+    transition: all 0.3s;
     padding: 5px;
     width: 100%;
     height: min-content;
