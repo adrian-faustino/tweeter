@@ -80,9 +80,8 @@
 
 /* error message */
 .error-msg.hidden {
-  color: rgba(255, 0, 0, 0.856);
+  color: rgba(238, 0, 0, 0.9);
   text-shadow: 0 1px rgb(80, 67, 67);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
   position: absolute;
   left: 50%;
@@ -93,9 +92,8 @@
 }
 
 .error-msg.reveal.shake {
-  color: rgba(255, 0, 0, 0.856);
+  color: rgba(238, 0, 0, 0.9);
   text-shadow: 0 1px rgb(80, 67, 67);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
   position: absolute;
   left: 50%;
@@ -106,9 +104,8 @@
 }
 
 .error-msg.reveal {
-  color: rgba(255, 0, 0, 0.856);
+  color: rgba(238, 0, 0, 0.9);
   text-shadow: 0 1px rgb(80, 67, 67);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
   position: absolute;
   left: 50%;
@@ -125,7 +122,7 @@
   }
   20% {
     bottom: 26px;
-    color: rgba(255, 0, 0, 0.856);
+    color: rgba(238, 0, 0, 0.9);
   }
   40% {
     bottom: 5px;
@@ -133,7 +130,7 @@
   }
   65% {
     bottom: 24px;
-    color: rgba(255, 0, 0, 0.856);
+    color: rgba(238, 0, 0, 0.9);
   }
   90% {
     bottom: 10px;
@@ -141,7 +138,7 @@
   }
   100% {
     bottom: 15px;
-    color: rgba(255, 0, 0, 0.856);;
+    color: rgba(238, 0, 0, 0.9);;
   }
 }
 
@@ -152,7 +149,7 @@
   }
   20% {
     bottom: 26px;
-    color: rgba(255, 0, 0, 0.856);
+    color: rgba(238, 0, 0, 0.9);
   }
   40% {
     bottom: 5px;
@@ -160,7 +157,7 @@
   }
   65% {
     bottom: 24px;
-    color: rgba(255, 0, 0, 0.856);
+    color: rgba(238, 0, 0, 0.9);
   }
   90% {
     bottom: 10px;
@@ -168,6 +165,6 @@
   }
   100% {
     bottom: 15px;
-    color: rgba(255, 0, 0, 0.856);;
+    color: rgba(238, 0, 0, 0.9);;
   }
 }
