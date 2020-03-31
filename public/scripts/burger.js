@@ -13,6 +13,12 @@ $(document).ready(() => {
 
   // hide or show the submission form
   $('.v-container').on('click', () => {
+    // Bug fix. Put button on 'cooldown' to let animation finish before clicking again. 
+    $('.v-container').css('pointer-events', 'none');
+    setTimeout(() => {
+      $('.v-container').css('pointer-events', 'auto');
+    }, 1000);
+
     const rotation = $('.new-tweet').css('--rotation');
     if (rotation.split('').includes('9')) {
       $('.new-tweet')
