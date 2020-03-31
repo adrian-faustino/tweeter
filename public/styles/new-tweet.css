@@ -1,11 +1,14 @@
 .new-tweet {
-  position: relative;
+  position: absolute;
   border-radius: 8px;
   box-shadow: 0 0 3px black;
   top: 120px;
   padding: 10px;
   background-color: #4056A1;
   color: whitesmoke;
+  --rotation: 90deg;
+  transform: rotateX(var(--rotation));
+  transition: all 1s;
 }
 
 .new-tweet > h2 {

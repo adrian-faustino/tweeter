@@ -11,8 +11,25 @@ $(document).ready(() => {
       .removeClass('open');
   });
 
-  // focus the text field after jump
+  // hide or show the submission form
   $('.v-container').on('click', () => {
+    const rotation = $('.new-tweet').css('--rotation');
+    console.log('Rotation!', rotation);
+    if (rotation.split('').includes('9')) {
+      console.log('rotate!')
+      $('.new-tweet')
+        .css('--rotation', '0deg')
+        .css('position', 'relative');
+    } else {
+      setTimeout(() => {
+        $('.new-tweet')
+          .css('position', 'absolute');
+      }, 1000);
+      $('.new-tweet')
+        .css('--rotation', '90deg');
+    }
+
+    // focus the text field after jump
     window.scroll({
       top: 0,
       left: 0,
