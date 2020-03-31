@@ -14,9 +14,7 @@ $(document).ready(() => {
   // hide or show the submission form
   $('.v-container').on('click', () => {
     const rotation = $('.new-tweet').css('--rotation');
-    console.log('Rotation!', rotation);
     if (rotation.split('').includes('9')) {
-      console.log('rotate!')
       $('.new-tweet')
         .css('--rotation', '0deg')
         .css('position', 'relative');
